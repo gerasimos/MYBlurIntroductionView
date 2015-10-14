@@ -148,7 +148,7 @@
     //Add image, if there is room
     if (self.PanelImageView.image) {
         self.PanelImageView.frame = CGRectMake(kLeftRightMargins, runningYOffset, self.frame.size.width - 2*kLeftRightMargins, self.frame.size.height - runningYOffset - kBottomPadding);
-        self.PanelImageView.contentMode = UIViewContentModeCenter;
+        self.PanelImageView.contentMode = UIViewContentModeScaleAspectFit;
         self.PanelImageView.clipsToBounds = YES;
         [self addSubview:self.PanelImageView];
     }
